@@ -1,4 +1,9 @@
-SublimeMakeExecutable
-=====================
+## Description
 
-A plugin for Sublime Text 2. If the file you saved has no extension and start with shebang, this plugin make executable that file.
+If the file you are saving has one of the enabled extensions and starts with a shebang (#!), this plugin saves that file as executable.
+
+## Preferences
+
+ - `enabled_extensions` : ["","sh","py","rb","pl"]
+
+		An array of file extensions that MakeExecutable should run on.
