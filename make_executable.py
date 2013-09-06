@@ -5,7 +5,7 @@ s = sublime.load_settings('MakeExecutable.sublime-settings')
 
 class Pref:
     def load(self):
-        Pref.enabled_extensions = map(lambda x: x.lower(), s.get('enabled_extensions', []))
+        Pref.enabled_extensions = [x.lower() for x in s.get('enabled_extensions', [])]
 
 Pref = Pref()
 Pref.load();
